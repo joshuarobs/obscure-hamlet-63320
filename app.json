@@ -1,0 +1,25 @@
+{
+  "name": "Test Hasura CI/CD with Heroku",
+  "description": "",
+  "logo": "https://storage.googleapis.com/hasura-graphql-engine/console/assets/favicon.png",
+  "keywords": ["database", "api", "graphql", "heroku", "postgres", "hasura"],
+  "success_url": "/console",
+  "env": {
+    "HASURA_GRAPHQL_ADMIN_SECRET": {
+      "description": "The admin secret key for Hasura GraphQL engine. It secures the GraphQL endpoint and console.",
+      "generator": "secret"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "stack": "container",
+  "addons": [
+    {
+      "plan": "heroku-postgresql:hobby-dev"
+    }
+  ]
+}
