@@ -10,7 +10,7 @@
       "generator": "secret"
     },
     "HASURA_GRAPHQL_CLI_ENVIRONMENT": {
-      "description": "Needed to make this work on Heroku. Make sure that the value is `default`.",
+      "description": "Needed to make this work on Heroku. Make sure that the value is set to `default`.",
       "value": "default"
     }
   },
