@@ -8,6 +8,10 @@
     "HASURA_GRAPHQL_ADMIN_SECRET": {
       "description": "The admin secret key for Hasura GraphQL engine. It secures the GraphQL endpoint and console.",
       "generator": "secret"
+    },
+    "HASURA_GRAPHQL_CLI_ENVIRONMENT": {
+      "description": "Needed to make this work on Heroku.",
+      "value": "default"
     }
   },
   "formation": {
